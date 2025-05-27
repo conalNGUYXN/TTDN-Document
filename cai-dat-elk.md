@@ -149,6 +149,7 @@ sudo filebeat modules enable system
 
 ```bash
 sudo filebeat setup --index-management -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=["0.0.0.0:9200"]'
+```
 
 ### Khởi động Filebeat
 
@@ -165,5 +166,6 @@ sudo systemctl status filebeat
 ```bash
 curl -XGET http://localhost:9200/_cat/indices?v
 ```
-
+### Kết quả
+![Kết quả](images/elasticsearch_indices_output.png)
 ---
