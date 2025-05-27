@@ -10,7 +10,18 @@ ping dia_chi_elasticsearch
 - Giải nén vào thư mục: `C:\Program Files\Winlogbeat`.
 
 ## 3. Cấu hình Winlogbeat
+Mở file cấu hình:
 
+```powershell
+notepad "C:\Program Files\Winlogbeat\winlogbeat.yml"
+```
+
+Chỉnh sửa phần output:
+
+```yaml
+output.elasticsearch:
+  hosts: ["http://<ĐỊA_CHỈ_ELASTICSEARCH>:9200"]
+  
 ## 4. Thiết lập các log cần thu thập
 
 ## 5. Tải index template và dashboards
