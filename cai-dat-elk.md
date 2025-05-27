@@ -148,8 +148,7 @@ sudo filebeat modules enable system
 ### Thiết lập index template
 
 ```bash
-sudo filebeat setup --index-management
-```
+sudo filebeat setup --index-management -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=["0.0.0.0:9200"]'
 
 ### Khởi động Filebeat
 
