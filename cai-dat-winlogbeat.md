@@ -10,12 +10,18 @@ ping dia_chi_elasticsearch
 - Giải nén vào thư mục: `C:\Program Files\Winlogbeat`.
 
 ## 3. Cấu hình Winlogbeat
-Mở file cấu hình:
+
+Mở file cấu hình bằng Powershell quyền Administrator:
 
 ```powershell
 notepad "C:\Program Files\Winlogbeat\winlogbeat.yml"
 ```
+Chỉnh sửa phần Kibana host:
 
+```yaml
+#Kibana Host
+host: "ĐỊA_CHỈ_ELASTICSEARCH:5601"
+```
 Chỉnh sửa phần output:
 
 ```yaml
