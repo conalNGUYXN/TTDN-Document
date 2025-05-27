@@ -83,7 +83,7 @@ sudo systemctl restart elasticsearch
 curl -X GET "localhost:9200"
 ```
 
-### Kết quả
+Kết quả
 ![Kết quả](images/cai-thanh-cong-elasticsearch.png)
 
 ---
@@ -117,6 +117,9 @@ Khởi động lại Kibana:
 ```bash
 sudo systemctl restart kibana
 ```
+
+Kết quả sau khi truy cập Kibana:
+![Kết quả](images/kibana.png)
 
 ---
 
