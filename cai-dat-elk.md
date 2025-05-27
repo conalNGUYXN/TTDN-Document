@@ -1,6 +1,5 @@
 
-# Hướng Dẫn Cài Đặt Elasticsearch, Kibana, Filebeat Trên Ubuntu (Không Dùng Logstash)
-
+# Hướng Dẫn Cài Đặt Elasticsearch, Kibana, Filebeat Trên Ubuntu 22.04
 ## 1. Cập nhật hệ thống và cài Java
 
 ```bash
@@ -83,6 +82,9 @@ sudo systemctl restart elasticsearch
 ```bash
 curl -X GET "localhost:9200"
 ```
+
+### Kết quả
+![Kết quả](images/cai-thanh-cong-elasticsearch.png)
 
 ---
 
