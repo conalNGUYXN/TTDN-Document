@@ -120,7 +120,7 @@ sudo systemctl restart kibana
 
 ---
 
-## 6. Cài đặt và cấu hình Filebeat (không dùng Logstash)
+## 6. Cài đặt và cấu hình Filebeat
 
 ```bash
 sudo apt-get install filebeat -y
@@ -132,7 +132,7 @@ sudo apt-get install filebeat -y
 sudo nano /etc/filebeat/filebeat.yml
 ```
 
-Bật đầu ra Elasticsearch (hủy comment nếu cần):
+Bật đầu ra Elasticsearch:
 
 ```yaml
 output.elasticsearch:
