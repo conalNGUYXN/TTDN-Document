@@ -11,7 +11,7 @@ ping dia_chi_elasticsearch
 
 ## 3. Cấu hình Winlogbeat
 
-Mở file cấu hình bằng Powershell quyền Administrator:
+Mở file cấu hình bằng Powershell dưới quyền Administrator:
 
 ```powershell
 notepad "C:\Program Files\Winlogbeat\winlogbeat.yml"
@@ -29,15 +29,20 @@ output.elasticsearch:
   hosts: ["http://<ĐỊA_CHỈ_ELASTICSEARCH>:9200"]
 ```
 
-## 4. Thiết lập các log cần thu thập
+## 4. Tải index template và dashboards
 
-## 5. Tải index template và dashboards
+Chạy PowerShell dưới quyền Administrator:
 
-## 6. Cài Winlogbeat dưới dạng dịch vụ Windows
+```powershell
+cd 'C:\\Program Files\\Winlogbeat'
+.\winlogbeat.exe setup -e
+```
 
-## 7. Kiểm tra trạng thái dịch vụ
+## 5. Cài Winlogbeat dưới dạng dịch vụ Windows
 
-## 8. Kiểm tra dữ liệu trong Elasticsearch
+## 6. Kiểm tra trạng thái dịch vụ
+
+## 7. Kiểm tra dữ liệu trong Elasticsearch
 
 ```bash
 curl -XGET http://<ĐỊA_CHỈ_ELASTICSEARCH>:9200/_cat/indices?v
