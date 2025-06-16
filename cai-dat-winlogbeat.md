@@ -40,8 +40,24 @@ cd 'C:\\Program Files\\Winlogbeat'
 
 ## 5. Cài Winlogbeat dưới dạng dịch vụ Windows
 
+```powershell
+.\install-service-winlogbeat.ps1
+```
+
+Khởi động dịch vụ:
+
+```powershell
+Start-Service winlogbeat
+```
+
+---
 ## 6. Kiểm tra trạng thái dịch vụ
 
+```powershell
+Get-Service winlogbeat
+```
+
+---
 ## 7. Kiểm tra dữ liệu trong Elasticsearch
 
 ```bash
